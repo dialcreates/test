@@ -1,0 +1,35 @@
+html {
+  background: white;
+}
+body {
+  background: url(https://cdn.discordapp.com/attachments/920718364261879821/928493756469104691/bg.png)
+    0% 80%;
+  background-size: 100vw auto;
+  animation: moves 4s infinite linear;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+@keyframes moves {
+  to {
+    background-position: -100vw 80%;
+  }
+}
+img {
+  margin: auto;
+  max-height: 50vh;
+  animation: navigate 2s infinite;
+}
+@keyframes navigate {
+/* 0 & 100% might not be needed */
+  10% {
+    transform: rotate(3deg) translate(-50px, 2vh);
+  }
+  50% {
+    transform: rotate(-4deg) translate(-2vh, 50px);
+  }
+  25%,
+  75% {
+    transform: rotate(6deg) translate(50px, 2vh);
+  }
+}
